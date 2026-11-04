@@ -23,3 +23,5 @@ backup/
 
 /fish/.config/fish/fish_variables
 /fish/.config/fish/config.local.fish
+
+/vim/.config/vim/pack/

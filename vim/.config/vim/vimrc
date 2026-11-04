@@ -1,0 +1,87 @@
+" Basic sanity
+set nocompatible
+set encoding=utf-8
+set hidden
+set updatetime=300
+set timeoutlen=200
+set ttimeoutlen=10
+
+" UI
+syntax on
+set number
+set ruler
+set showcmd
+set laststatus=2
+set wildmenu
+set wildmode=longest:full,full
+set scrolloff=5
+set sidescrolloff=5
+set display+=lastline
+set list
+set listchars=tab:→·,trail:·,extends:>,precedes:<
+
+" Search
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+nnoremap <Esc> :nohlsearch<CR><Esc>
+
+" Editing
+filetype plugin indent on
+set backspace=indent,eol,start
+set autoindent
+set smartindent
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set shiftround
+set textwidth=0
+set formatoptions-=t
+set formatoptions+=j
+
+" Files
+set autoread
+set nobackup
+set nowritebackup
+set noswapfile
+set undofile
+set undodir=~/.vim/undo//
+
+" Splits
+set splitbelow
+set splitright
+
+" Clipboard: explicit system clipboard only
+nnoremap gy "+y
+xnoremap gy "+y
+nnoremap gp "+p
+xnoremap gp "+p
+
+" Better movement on wrapped lines
+nnoremap j gj
+nnoremap k gk
+
+" Make Y behave like C/D
+nnoremap Y y$
+
+" Insert mode: Escape
+inoremap jk <Esc>
+inoremap kj <Esc>
+
+" Visual mode: Escape
+xnoremap jk <Esc>
+xnoremap kj <Esc>
+
+" Normal mode: Save
+nnoremap jk :update<CR>
+nnoremap kj :update<CR>
+
+" Create undo dir if missing
+if !isdirectory(expand('~/.vim/undo'))
+  call mkdir(expand('~/.vim/undo'), 'p')
+endif
+
+packadd vim-surround
+packadd vim-repeat
