@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+.AppleDouble
+
+# Neovim
+*.swp
+*.swo
+*.swn
+Session.vim
+shada/
+undo/
+backup/
+
+# Editor temporary files
+*~
+*.tmp
+
+# Secrets
+.env
+.env.*
+!.env.example
