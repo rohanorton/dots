@@ -1,0 +1,6 @@
+command = /opt/homebrew/bin/fish
+working-directory = home
+click-repeat-interval = 500
+auto-update-channel = off
+theme = TokyoNight
+font-family = MonoLisa
