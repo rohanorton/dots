@@ -19,3 +19,7 @@ backup/
 .env
 .env.*
 !.env.example
+
+
+/fish/.config/fish/fish_variables
+/fish/.config/fish/config.local.fish
