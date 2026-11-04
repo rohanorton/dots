@@ -1,0 +1,4 @@
+# vim: ft=gitconfig
+[user]
+    name = Rohan Orton
+    email = ro@itacs.de

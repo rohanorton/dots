@@ -1,0 +1,15 @@
+# vim: ft=gitconfig
+[alias]
+    st = status -sb
+    br = branch
+    co = checkout
+    cob = checkout -b
+    cop = checkout --patch
+    ap = add --patch
+    ci = commit
+    ca = commit --amend
+    can = commit --amend --no-edit
+    df = diff
+    dc = diff --cached
+    lg = log --graph --decorate --oneline --all
+    aliases = config --get-regexp '^alias\\.'
