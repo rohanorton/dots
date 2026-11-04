@@ -25,3 +25,7 @@ backup/
 /fish/.config/fish/config.local.fish
 
 /vim/.config/vim/pack/
+
+/karabiner/.config/karabiner/karabiner.json
+/karabiner/.config/karabiner/automatic_backups/
+/karabiner/.config/karabiner/assets/complex_modifications/[0-9]*.json

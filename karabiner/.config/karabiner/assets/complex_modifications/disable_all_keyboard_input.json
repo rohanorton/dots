@@ -1,0 +1,20 @@
+{
+  "title": "Disable All Keyboard Input",
+  "rules": [
+    {
+      "description": "Disable all keyboard input",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": { "any": "key_code" },
+          "to": []
+        },
+        {
+          "type": "basic",
+          "from": { "any": "consumer_key_code" },
+          "to": []
+        }
+      ]
+    }
+  ]
+}

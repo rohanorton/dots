@@ -1,0 +1,36 @@
+{
+  "title": "Fn + Volume Keys to Fine Volume Controls",
+  "rules": [
+    {
+      "description": "Map fn + volume controls to fine volume controls (Option + Shift + Volume)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f11",
+            "modifiers": { "mandatory": ["fn"] }
+          },
+          "to": [
+            {
+              "key_code": "volume_decrement",
+              "modifiers": ["left_shift", "left_option"]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f12",
+            "modifiers": { "mandatory": ["fn"] }
+          },
+          "to": [
+            {
+              "key_code": "volume_increment",
+              "modifiers": ["left_shift", "left_option"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
